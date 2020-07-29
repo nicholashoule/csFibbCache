@@ -1,5 +1,5 @@
 ---
-name: ASP.NET Core Build
+name: .NET Core Build
 
 on:
   push:
