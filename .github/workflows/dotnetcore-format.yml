@@ -30,4 +30,4 @@ jobs:
 
       - name: Format projects (--dry-run)
         run: |
-          ./dotnet-format --check --dry-run -v d -w .
+          ./dotnet-format --check -v d .
