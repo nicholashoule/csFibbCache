@@ -1,5 +1,5 @@
 run = "dotnet run"
-entrypoint = "main.cs"
+entrypoint = "Program.cs"
 
 hidden = ["bin", "obj"]
 
