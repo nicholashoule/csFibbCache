@@ -26,4 +26,4 @@ jobs:
 
       - name: Build .NET Project
         run: |
-          dotnet build --configuration Release
+          dotnet build --configuration Release .
