@@ -1,2 +1,6 @@
+# The command that is executed when the run button is clicked.
 language = "csharp"
 run = "mcs -out:Program.exe Program.cs;mono Program.exe"
+
+# The default file opened in the editor.
+entrypoint = "Program.cs"
