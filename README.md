@@ -47,7 +47,7 @@ C# recursion is quite slow to increase performance create and use a cache.
 
 ### Versions:
 
-dotnet 3.1+, < 5.0.401
+dotnet 3.1+, <= 6.0
 
 ##### Run the code:
 
