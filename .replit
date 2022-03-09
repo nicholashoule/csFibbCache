@@ -1,7 +1,7 @@
 # The command that is executed when the run button is clicked.
 # The default file opened in the editor.
 run = "dotnet run"
-entrypoint = "Program.cs"
+entrypoint = "main.cs"
 
 hidden = ["bin", "obj"]
 
