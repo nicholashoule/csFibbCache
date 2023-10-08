@@ -16,7 +16,8 @@ language = "dotnet"
 packageSearch = true
 
 [nix]
-channel = "stable-21_11"
+# https://search.nixos.org/packages
+channel = "stable-23_05"
 
 [languages.csharp]
 pattern = "**/*.cs"

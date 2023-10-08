@@ -5,9 +5,10 @@ namespace csFibbCache
 {
     class Program
     {
-        private const decimal V = 0;
-        private const decimal I = 1;
-        private const decimal II = 2;
+        private const int ZERO = 0;
+        private const int ONE = 1;
+        private const int TWO = 2;
+        private const int FIBBVALUE = 139;
 
         // Int, Max: 2147483647
         // Fibb 46: 1836311903
@@ -20,7 +21,6 @@ namespace csFibbCache
         // decimal, Max: 79228162514264337593543950335
         // Fibb 139: 50095301248058391139327916261
         // Fibb 140: ~(79228162514264337593543950335)
-        private const int fValue = 139;
 
         // Create a cache
         private static Dictionary<decimal, decimal> decimalCache = new Dictionary<decimal, decimal>();
@@ -29,12 +29,12 @@ namespace csFibbCache
         public static void Main(string[] args)
         {
             Console.WriteLine("Running Fibb()");
-            for (decimal i = V; i <= fValue; i++)
+            for (int i = ZERO; i <= FIBBVALUE; i++)
             {
                 Console.WriteLine("Fibb {0}: {1}", i, Fibb(i));
             }
 
-            Console.WriteLine("Final Fibb {0}: {1}", fValue, Fibb(fValue));
+            Console.WriteLine("Final Fibb {0}: {1}", FIBBVALUE, Fibb(FIBBVALUE));
         }
 
         // Fibb ... given an index return fibonacci value
@@ -47,16 +47,16 @@ namespace csFibbCache
 
             switch (n)
             {
-                case V:
-                    result = V;
+                case ZERO:
+                    result = ZERO;
                     break;
-                case I:
-                    result = I;
+                case ONE:
+                    result = ONE;
                     break;
                 default:
                     try
                     {
-                        result = Fibb(n - I) + Fibb(n - II);
+                        result = Fibb(n - ONE) + Fibb(n - TWO);
                         break;
                     }
                     catch (Exception e)
