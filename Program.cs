@@ -5,9 +5,9 @@ namespace csFibbCache
 {
     class Program
     {
-        private const decimal V = 0;
-        private const decimal I = 1;
-        private const decimal II = 2;
+        private const int zero = 0;
+        private const int one = 1;
+        private const int two = 2;
 
         // Int, Max: 2147483647
         // Fibb 46: 1836311903
@@ -29,7 +29,7 @@ namespace csFibbCache
         public static void Main(string[] args)
         {
             Console.WriteLine("Running Fibb()");
-            for (decimal i = V; i <= fValue; i++)
+            for (decimal i = zero; i <= fValue; i++)
             {
                 Console.WriteLine("Fibb {0}: {1}", i, Fibb(i));
             }
@@ -47,16 +47,16 @@ namespace csFibbCache
 
             switch (n)
             {
-                case V:
-                    result = V;
+                case zero:
+                    result = zero;
                     break;
-                case I:
-                    result = I;
+                case one:
+                    result = one;
                     break;
                 default:
                     try
                     {
-                        result = Fibb(n - I) + Fibb(n - II);
+                        result = Fibb(n - one) + Fibb(n - two);
                         break;
                     }
                     catch (Exception e)
