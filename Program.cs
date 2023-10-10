@@ -53,6 +53,9 @@ namespace csFibbCache
                 case ONE:
                     result = ONE;
                     break;
+                case TWO:
+                    result = ONE;
+                    break;
                 default:
                     try
                     {
