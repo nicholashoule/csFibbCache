@@ -2,8 +2,8 @@
 
 [![Run on Repl.it](https://repl.it/badge/github/nicholashoule/csFibbCache)](https://repl.it/github/nicholashoule/csFibbCache)
 
-![.NET Core Format](https://github.com/nicholashoule/csFibbCache/workflows/.NET%20Core%20Format/badge.svg?branch=master)
-![.NET Core Build](https://github.com/nicholashoule/csFibbCache/workflows/.NET%20Core%20Build/badge.svg?branch=master)
+![.NET Core Format](https://github.com/nicholashoule/csFibbCache/workflows/.NET%20Core%20Format/badge.svg?branch=main)
+![.NET Core Build](https://github.com/nicholashoule/csFibbCache/workflows/.NET%20Core%20Build/badge.svg?branch=main)
 
 # Classic C# recursive fibonacci example
 
