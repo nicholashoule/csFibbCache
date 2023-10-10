@@ -8,7 +8,7 @@ namespace csFibbCache
         private const int ZERO = 0;
         private const int ONE = 1;
         private const int TWO = 2;
-        private const int FIBBVALUE = 139;
+        private const int FIBBINDEX = 139;
 
         // Int, Max: 2147483647
         // Fibb 46: 1836311903
@@ -29,12 +29,12 @@ namespace csFibbCache
         public static void Main(string[] args)
         {
             Console.WriteLine("Running Fibb()");
-            for (int i = ZERO; i <= FIBBVALUE; i++)
+            for (int i = ZERO; i <= FIBBINDEX; i++)
             {
                 Console.WriteLine("Fibb {0}: {1}", i, Fibb(i));
             }
 
-            Console.WriteLine("Final Fibb {0}: {1}", FIBBVALUE, Fibb(FIBBVALUE));
+            Console.WriteLine("Final Fibb {0}: {1}", FIBBINDEX, Fibb(FIBBINDEX));
         }
 
         // Fibb ... given an index return fibonacci value
@@ -51,6 +51,9 @@ namespace csFibbCache
                     result = ZERO;
                     break;
                 case ONE:
+                    result = ONE;
+                    break;
+                case TWO:
                     result = ONE;
                     break;
                 default:
